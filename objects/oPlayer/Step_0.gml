@@ -17,7 +17,7 @@ vsp = vsp + grv;
 // jump only if on the floor
 if(place_meeting(x, y+1, oWall)) && (key_jump)
 {
-	vsp = -6;
+	vsp = -4;
 }
 
 
@@ -45,3 +45,30 @@ if(place_meeting(x, y+vsp, oWall))
 }
 // y coordinate movement
 y = y + vsp;
+
+
+// Air Animation
+if(!place_meeting(x, y+1, oWall))
+{
+	sprite_index = sPlayerAir;
+	image_speed = 0;
+	// image_index is for what frame of sprite index we want
+	if(sign(vsp) > 0) image_index = 1; else image_index = 0;
+}
+// Ground Animation
+else
+{
+	image_speed = 1;
+	if(hsp == 0)
+	{
+		sprite_index = sPlayer;		// idle animation
+	}
+	else
+	{
+		sprite_index = sPlayerR;	// running animation
+	}
+}
+
+if(hsp != 0) image_xscale = sign(hsp);
+
+
