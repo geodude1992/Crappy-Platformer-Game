@@ -10,7 +10,7 @@ var move = key_right - key_left;
 // calculate mm
 hsp = move * walksp;
 
-// check for horizontal collision
+// Check for horizontal collision
 if(place_meeting(x+hsp, y, oWall))
 {
 	while(!place_meeting(x+sign(hsp), y, oWall))
