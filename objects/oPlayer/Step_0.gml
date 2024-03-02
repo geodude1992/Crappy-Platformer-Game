@@ -1,8 +1,8 @@
 // framerate logic
 
 // check for key inputs
-key_left = keyboard_check(vk_left);
-key_right = keyboard_check(vk_right);
+key_left = keyboard_check(vk_left) || keyboard_check(ord("A"));
+key_right = keyboard_check(vk_right) || keyboard_check(ord("D "));
 key_jump = keyboard_check(vk_space);
 
 
@@ -69,6 +69,7 @@ else
 	}
 }
 
+// Flip Player Sprite when moving left
 if(hsp != 0) image_xscale = sign(hsp);
 
 

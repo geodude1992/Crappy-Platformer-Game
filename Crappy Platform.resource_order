@@ -18,8 +18,12 @@
   ],
   "ResourceOrderSettings": [
     {"name":"sPlayerR","order":2,"path":"sprites/sPlayerR/sPlayerR.yy",},
+    {"name":"oBullet","order":3,"path":"objects/oBullet/oBullet.yy",},
     {"name":"oWall","order":1,"path":"objects/oWall/oWall.yy",},
+    {"name":"sPlayerGun","order":4,"path":"sprites/sPlayerGun/sPlayerGun.yy",},
+    {"name":"sBullet","order":5,"path":"sprites/sBullet/sBullet.yy",},
     {"name":"sPlayerAir","order":3,"path":"sprites/sPlayerAir/sPlayerAir.yy",},
     {"name":"sWall","order":1,"path":"sprites/sWall/sWall.yy",},
+    {"name":"oPlayerGun","order":2,"path":"objects/oPlayerGun/oPlayerGun.yy",},
   ],
 }
