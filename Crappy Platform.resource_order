@@ -30,5 +30,6 @@
     {"name":"oPlayerGun","order":2,"path":"objects/oPlayerGun/oPlayerGun.yy",},
     {"name":"sEnemy1","order":6,"path":"sprites/sEnemy1/sEnemy1.yy",},
     {"name":"oEnemy","order":4,"path":"objects/oEnemy/oEnemy.yy",},
+    {"name":"oCamera","order":6,"path":"objects/oCamera/oCamera.yy",},
   ],
 }
