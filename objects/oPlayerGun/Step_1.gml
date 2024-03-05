@@ -3,12 +3,35 @@ x = oPlayer.x+5;
 y = oPlayer.y+3;
 
 
-image_angle = point_direction(x, y, mouse_x, mouse_y);
+// aimming with keyboard
+if(oPlayer.controller == 0)
+{
+	// aim angle with mouse
+	image_angle = point_direction(x, y, mouse_x, mouse_y);
+}
+// aimming with Controller
+else
+{
+	// value(controller device, stick)
+	// horizontal
+	var controllerh = gamepad_axis_value(0, gp_axisrh);
+	// vertical
+	var controllerv = gamepad_axis_value(0, gp_axisrv);	
+	
+	// set a deadzone
+	if(abs(controllerh) > 0.2) || (abs(controllerv) > 0.2)
+	{
+		controllerangle = point_direction(0, 0, controllerh, controllerv);
+	}
+	image_angle = controllerangle;
+}
+
 
 firingdelay = firingdelay - 1;
 recoil = max(0, recoil - 1);
 
-if(mouse_check_button(mb_left)) && (firingdelay < 0)
+// check for left mouse click or controller R trigger
+if(mouse_check_button(mb_left) || gamepad_button_check(0, gp_shoulderrb)) && (firingdelay < 0)
 {
 	// affects gun not bullet
 	recoil = 4;
