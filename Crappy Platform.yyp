@@ -42,6 +42,7 @@
     {"id":{"name":"sEnemyR","path":"sprites/sEnemyR/sEnemyR.yy",},},
     {"id":{"name":"sBullet","path":"sprites/sBullet/sBullet.yy",},},
     {"id":{"name":"sPlayer","path":"sprites/sPlayer/sPlayer.yy",},},
+    {"id":{"name":"oEnemyDead","path":"objects/oEnemyDead/oEnemyDead.yy",},},
     {"id":{"name":"sPlayerAir","path":"sprites/sPlayerAir/sPlayerAir.yy",},},
     {"id":{"name":"sWall","path":"sprites/sWall/sWall.yy",},},
     {"id":{"name":"sEnemyD","path":"sprites/sEnemyD/sEnemyD.yy",},},

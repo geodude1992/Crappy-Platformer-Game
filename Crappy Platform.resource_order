@@ -23,6 +23,7 @@
     {"name":"sPlayerGun","order":4,"path":"sprites/sPlayerGun/sPlayerGun.yy",},
     {"name":"sEnemyR","order":7,"path":"sprites/sEnemyR/sEnemyR.yy",},
     {"name":"sBullet","order":5,"path":"sprites/sBullet/sBullet.yy",},
+    {"name":"oEnemyDead","order":5,"path":"objects/oEnemyDead/oEnemyDead.yy",},
     {"name":"sPlayerAir","order":3,"path":"sprites/sPlayerAir/sPlayerAir.yy",},
     {"name":"sWall","order":1,"path":"sprites/sWall/sWall.yy",},
     {"name":"sEnemyD","order":8,"path":"sprites/sEnemyD/sEnemyD.yy",},
