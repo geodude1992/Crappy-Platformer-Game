@@ -21,9 +21,13 @@
     {"name":"oBullet","order":3,"path":"objects/oBullet/oBullet.yy",},
     {"name":"oWall","order":1,"path":"objects/oWall/oWall.yy",},
     {"name":"sPlayerGun","order":4,"path":"sprites/sPlayerGun/sPlayerGun.yy",},
+    {"name":"sEnemyR","order":7,"path":"sprites/sEnemyR/sEnemyR.yy",},
     {"name":"sBullet","order":5,"path":"sprites/sBullet/sBullet.yy",},
     {"name":"sPlayerAir","order":3,"path":"sprites/sPlayerAir/sPlayerAir.yy",},
     {"name":"sWall","order":1,"path":"sprites/sWall/sWall.yy",},
+    {"name":"sEnemyD","order":8,"path":"sprites/sEnemyD/sEnemyD.yy",},
     {"name":"oPlayerGun","order":2,"path":"objects/oPlayerGun/oPlayerGun.yy",},
+    {"name":"sEnemy1","order":6,"path":"sprites/sEnemy1/sEnemy1.yy",},
+    {"name":"oEnemy","order":4,"path":"objects/oEnemy/oEnemy.yy",},
   ],
 }
