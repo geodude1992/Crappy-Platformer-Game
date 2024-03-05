@@ -1,5 +1,5 @@
 // Gun position
-x = oPlayer.x+10;
+x = oPlayer.x+5;
 y = oPlayer.y+3;
 
 
@@ -31,6 +31,7 @@ y = y - lengthdir_y(recoil, image_angle)
 if(image_angle > 90) && (image_angle < 270)
 {
 	image_yscale = -1;
+	x = oPlayer.x-5;
 }
 else
 {
