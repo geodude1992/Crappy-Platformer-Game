@@ -12,7 +12,8 @@ if(place_meeting(x+hsp, y, oWall))
 	{
 		x = x + sign(hsp);
 	}
-	hsp = 0;
+	// enemies will walk right till the collide with wall then walk left
+	hsp = -hsp;
 }
 // x coordinate movement
 x = x + hsp;
