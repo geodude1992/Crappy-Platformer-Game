@@ -12,10 +12,12 @@ if(mouse_check_button(mb_left)) && (firingdelay < 0)
 {
 	// affects gun not bullet
 	recoil = 4;
-	firingdelay = 5;
+	// fire rate
+	firingdelay = 15;
 	with(instance_create_layer(x,y,"Bullet", oBullet))
 	{
-		speed = 25;
+		// projectile velocity
+		speed = 15;
 		// other refers to the bullet object
 		//direction = other.image_angle;
 		direction = other.image_angle + random_range(-2, 2); // add bloom
