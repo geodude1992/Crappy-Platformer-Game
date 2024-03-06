@@ -1,7 +1,7 @@
 /// @description Set up Camera
 cam = view_camera[0];
 
-follow = oPlayer;
+follow = oBullet;
 
 // middle point of the camera rectangle
 view_w_half = camera_get_view_width(cam) * 0.5;
