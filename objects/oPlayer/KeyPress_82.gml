@@ -1,2 +1,2 @@
 // Restarts game on R key press for testing
-game_restart();
+SlideTransition(TRANS_MODE.RESTART);
