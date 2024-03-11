@@ -30,6 +30,7 @@
     {"name":"sEnemyD","order":8,"path":"sprites/sEnemyD/sEnemyD.yy",},
     {"name":"oPlayerGun","order":2,"path":"objects/oPlayerGun/oPlayerGun.yy",},
     {"name":"sEnemy1","order":6,"path":"sprites/sEnemy1/sEnemy1.yy",},
+    {"name":"oLevelEnd","order":8,"path":"objects/oLevelEnd/oLevelEnd.yy",},
     {"name":"oEnemy","order":4,"path":"objects/oEnemy/oEnemy.yy",},
     {"name":"oTransition","order":7,"path":"objects/oTransition/oTransition.yy",},
     {"name":"oCamera","order":6,"path":"objects/oCamera/oCamera.yy",},

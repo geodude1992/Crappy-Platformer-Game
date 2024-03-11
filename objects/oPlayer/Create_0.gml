@@ -7,6 +7,6 @@ grv = 0.1;
 // walking speed
 walksp = 4;
 
-
 // controller input
 controller = 0;
+hascontrol = true;

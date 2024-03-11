@@ -1,32 +1,45 @@
 // framerate logic
+#region // get Player Input
 
-// check for key inputs
-key_left = keyboard_check(vk_left) || keyboard_check(ord("A"));
-key_right = keyboard_check(vk_right) || keyboard_check(ord("D"));
-key_jump = keyboard_check(vk_space);
-
-
-// checks if keyboard input is detected
-if(key_left) || key_right || (key_jump)
+if(hascontrol)
 {
-	controller = 0;
-}
+	// check for key inputs
+	key_left = keyboard_check(vk_left) || keyboard_check(ord("A"));
+	key_right = keyboard_check(vk_right) || keyboard_check(ord("D"));
+	key_jump = keyboard_check(vk_space);
 
-// checks for controller input - axisLeftstickHorizontal - set deadzone
-if(abs(gamepad_axis_value(0, gp_axislh)) > 0.2)
-{
-	key_left = abs(min(gamepad_axis_value(0, gp_axislh), 0));
-	key_right = max(gamepad_axis_value(0, gp_axislh), 0);
-	controller = 1;
-}
+
+	// checks if keyboard input is detected
+	if(key_left) || key_right || (key_jump)
+	{
+		controller = 0;
+	}
+
+	// checks for controller input - axisLeftstickHorizontal - set deadzone
+	if(abs(gamepad_axis_value(0, gp_axislh)) > 0.2)
+	{
+		key_left = abs(min(gamepad_axis_value(0, gp_axislh), 0));
+		key_right = max(gamepad_axis_value(0, gp_axislh), 0);
+		controller = 1;
+	}
  
-// check for jump - gpface1 == "A button" on xbox controller
-if(gamepad_button_check_pressed(0,gp_face1))
-{
-	key_jump = 1;
-	controller = 1;
+	// check for jump - gpface1 == "A button" on xbox controller
+	if(gamepad_button_check_pressed(0,gp_face1))
+	{
+		key_jump = 1;
+		controller = 1;
+	}
 }
+else
+{
+	key_right = 0;
+	key_jump = 0;
+	key_left = 0;
+}
+#endregion
 
+
+#region // Calculate movement
 
 // no movement if both left and right keys are pressed
 var move = key_right - key_left;
@@ -94,4 +107,4 @@ else
 // Flip Player Sprite when moving left
 if(hsp != 0) image_xscale = sign(hsp);
 
-
+#endregion
