@@ -8,9 +8,9 @@ if(mode != TRANS_MODE.OFF)
 	}
 	else
 	{
-		percent = max(1.2, percent + max(((1.2 - percent)/10), 0.005));
+		percent = max(1.5, percent + max(((1.5 - percent)/10), 0.005));
 	}
-	if(percent == 1.2) || (percent == 0)
+	if(percent == 1.5) || (percent == 0)
 	{
 		switch(mode)
 		{

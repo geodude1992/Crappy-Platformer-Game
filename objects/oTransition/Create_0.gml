@@ -14,7 +14,7 @@ enum TRANS_MODE
 	RESTART,
 	INTRO
 }
-mode = TRANS_MODE.OFF;
+mode = TRANS_MODE.INTRO;
 percent = 1;
 // holds the variable to the next room to transition to
 target = room;
