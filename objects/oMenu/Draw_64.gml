@@ -11,7 +11,7 @@ for(var i = 0; i < menu_items; i++)
 {
 	var offset = 2;	//
 	var txt = menu[i];
-	if(menu_cursor == 1)
+	if(menu_cursor == i)
 	{
 		// arrow '>' of the left '0' pointing to the txt set to white
 		txt = string_insert("> ", txt, 0);
@@ -24,11 +24,13 @@ for(var i = 0; i < menu_items; i++)
 	var xx = menu_x;
 	var yy = menu_y - (menu_itemheight * (i * 1.5));
 	
+	// black outline around menu text
 	draw_set_color(c_black);
 	draw_text(xx-offset, yy, txt);
 	draw_text(xx+offset, yy, txt);
 	draw_text(xx, yy+offset, txt);
 	draw_text(xx, yy-offset, txt);
+	
 	draw_set_color(col);
 	draw_text(xx, yy, txt);
 }
