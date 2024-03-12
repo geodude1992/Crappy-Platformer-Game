@@ -17,3 +17,15 @@ y = clamp(y, 0+view_h_half, room_height-view_h_half);
 
 // Update camera view
 camera_set_view_pos(cam, x-view_w_half, y-view_h_half);
+
+// MISSING Add screen shake when shooting
+
+// Background image moves with players movement
+if(layer_exists("SkyCloudsBG"))
+{
+	layer_x("SkyCloudsBG", x/4);	// Closer distance sprites move slower
+}
+if(layer_exists("SkyBackGround"))
+{
+	layer_x("SkyBackGround", x/2);	// Farher distance sprites move faster
+}
