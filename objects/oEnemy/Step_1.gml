@@ -12,7 +12,8 @@ if(hp <= 0)
 		vsp = lengthdir_y(2, direction)-2;
 		
 		// 
-		if(sign(hsp) != 0) image_xscale = sign(hsp);
+		if(sign(hsp) != 0) image_xscale = sign(hsp) * other.size;
+		image_yscale = other.size;
 	}
 	
 	// gets rid of our enemy
