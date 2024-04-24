@@ -42,6 +42,9 @@
     "name": "sEnemy1",
     "path": "sprites/sEnemy1/sEnemy1.yy",
   },
-  "spriteMaskId": null,
+  "spriteMaskId": {
+    "name": "sEnemy1",
+    "path": "sprites/sEnemy1/sEnemy1.yy",
+  },
   "visible": true,
 }

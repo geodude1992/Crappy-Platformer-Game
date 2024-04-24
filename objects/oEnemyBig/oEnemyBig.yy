@@ -36,8 +36,8 @@
     "path": "sprites/sEnemy1/sEnemy1.yy",
   },
   "spriteMaskId": {
-    "name": "sPlayer",
-    "path": "sprites/sPlayer/sPlayer.yy",
+    "name": "sEnemy1",
+    "path": "sprites/sEnemy1/sEnemy1.yy",
   },
   "visible": true,
 }
